@@ -1,6 +1,6 @@
 "use strict";
 async function loadObject() {
-  const url = `http://content.guardianapis.com/search?q=referee&section=football&order-by=newest&show-fields=all&page-size=12&api-key=12cf0f50-6581-426a-af97-e44c699ff81a`;
+  const url = `https://content.guardianapis.com/search?q=referee&section=football&order-by=newest&show-fields=all&page-size=12&api-key=12cf0f50-6581-426a-af97-e44c699ff81a`;
   let response = await fetch(url);
   let data = await response.json();
   return data.response.results;
